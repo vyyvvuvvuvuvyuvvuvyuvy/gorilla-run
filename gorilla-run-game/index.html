@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Platformer Game</title>
+  <style>
+    /* Reset and basic styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    /* Background placeholder */
+    #menu {
+      background: url(blob:chrome-untrusted://media-app/81502ea4-5fa1-4929-954c-2a8a6e688fac) no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    /* Buttons styling */
+    button {
+      width: 200px;
+      padding: 15px 0;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div id="menu">
+    <button id="playBtn">Play</button>
+    <button id="shopBtn">Power Ups Shop</button>
+  </div>
+
+  <script>
+    // Placeholder event listeners for buttons
+    document.getElementById('playBtn').addEventListener('click', () => {
+      alert('Start the game!');
+      // Here you can hide the menu and start the game logic
+    });
+
+    document.getElementById('shopBtn').addEventListener('click', () => {
+      alert('Open the power ups shop!');
+      // Here you can open the shop interface
+    });
+  </script>
+</body>
+</html>
